@@ -48,7 +48,7 @@ _x = lambda p: xpath_with_ns(p, {'xlink': 'http://www.w3.org/1999/xlink'})
 
 
 class BigBlueButtonExtractor:
-    _VALID_URL = r'(?P<website>https?://[^/]+)/playback/presentation/(?P<version>[0-9.]+)/playback.html\?meetingId=(?P<id>[0-9a-f\-]+)'
+    _VALID_URL = r'(?P<website>https?://[^/]+)/playback/presentation/(?P<version>[0-9.]+)/[0-9a-f\-]+\?meetingId=(?P<id>[0-9a-f\-]+)'
     _TIMESTAMP_UNIT = 30000
 
     def _real_extract(self, url):
