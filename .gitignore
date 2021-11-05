@@ -1,0 +1,5 @@
+*.mp4
+*.log
+__pycache__
+package-lock.json
+node_modules

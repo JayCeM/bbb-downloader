@@ -33,7 +33,7 @@ driver.manage().window().maximize();
 
 /* Start playback */
 driver.sleep(1000 * 4);
-driver.findElement(By.className('acorn-play-button')).click();
+driver.findElement(By.className('vjs-big-play-button')).click();
 
 /* Stop after the required number of seconds */
 driver.sleep(1000 * myArgs[1]);
